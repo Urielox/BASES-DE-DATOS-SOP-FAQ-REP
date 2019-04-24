@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS ventas;
-CREATE DATABASE IF NOT EXISTS ventas;
-USE ventas;
+DROP DATABASE IF EXISTS reportes;
+CREATE DATABASE IF NOT EXISTS reportes;
+USE reportes;
 CREATE TABLE productos(
 	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
 	codigo VARCHAR(255) NOT NULL,
@@ -31,5 +31,7 @@ CREATE TABLE productos_vendidos(
 INSERT INTO productos(id, codigo, descripcion, precioVenta, precioCompra, existencia) 
 VALUES
 (1, '1', 'XD', 'XD', 'XD', 1);
-
+INSERT INTO FAQ.productos (id, codigo, descripcion, precioVenta, precioCompra, existencia)
+values
+(3, '1', 'XD', 'XD', 'XD', 1);
 # Correcto
